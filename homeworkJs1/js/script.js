@@ -9,13 +9,12 @@ function getCapacity(...arg) {
     return res;
 }
 let output = getCapacity(3, 2);
-document.write(output);
-console.log(output);
+document.getElementsByTagName("body") += output;
 
 let arr1 = [1, 4, 7, 3];
 let arr2 = [2, 8, 9, 5];
 let arr3 = [...arr1, ...arr2];
-console.log(...arr3);
+document.getElementsByTagName("body") += arr3;
 let auto = {
     wheels: 4,
     type: 'sedan',
@@ -35,6 +34,6 @@ let MAN = {
 let bmw = {
     ...auto
 }
-console.log(lada)
-console.log(MAN)
-console.log(bmw)
+document.getElementsByTagName("body") += lada;
+document.getElementsByTagName("body") += MAN;
+document.getElementsByTagName("body") += bmw;
