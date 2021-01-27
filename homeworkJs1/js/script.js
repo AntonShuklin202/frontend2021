@@ -24,6 +24,7 @@ console.log(getMax(1, 3, 8, 4, -2));
 let arr1 = [1, 4, 7, 3];
 let arr2 = [2, 8, 9, 5];
 let arr3 = [...arr1, ...arr2];
+console.log(...arr3);
 
 let auto = {
     wheels: 4,
