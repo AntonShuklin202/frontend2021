@@ -13,12 +13,12 @@ let house = {
     }
 }
 let house2 = Object.create(house);
+house2.homeAdress = 'Pushkinskaya st, 31';
 house2.getHomeAdress = function() {
     console.log(this.homeAdress);
 }
-house2.homeAdress = 'Pushkinskaya st, 31';
 house2.showInfo();
 house2.getHomeAdress();
-let house3 = Object.create(house2);
+let house3 = Object.create(house);
 house3.homeAdress = 'Lenina st, 12';
-house3.getHomeAdress();
+house2.getHomeAdress.bind(house3)();
